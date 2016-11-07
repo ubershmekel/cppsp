@@ -615,7 +615,7 @@ namespace cppsp
 		if (S_ISDIR(st.st_mode) || S_ISSOCK(st.st_mode)) pageErr_isDir();
 	}
 	cppspManager::cppspManager() :
-			threadID(0), debug(false) {
+			threadID(0), debug(true) {
 	}
 	staticPage* cppspManager::loadStaticPage(String path, bool fd, bool map) {
 		staticPage* lp1;
